@@ -8,16 +8,16 @@
 <body>
     <script>
             function isEmpty(obj){
-            for(let key in obj)
-            {
-            return false;
-            }
-            return true;}
-            let schedule = {};
-            alert( isEmpty(schedule) ); // true
-            schedule["8:30"] ="get up";
-            alert( isEmpty(schedule) ); // false
-            summ=0;
+                let salaries = {
+                John: 100,
+                Ann: 160,
+                Pete: 130
+                }
+                for(let key in salaries)
+                {
+                summ += salaries[key];
+                }
+                console.log(summ);
     </script>
 </body>
 </html>
